@@ -1,0 +1,11 @@
+[project]
+name = "pdf-summarizer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pdfplumber>=0.11.7",
+    "torch>=2.8.0",
+    "transformers>=4.55.2",
+]
