@@ -56,7 +56,7 @@ def summarize_text(text, max_tokens=800, max_length=200, min_length=50):
 
 # -------- Step 6: Run --------
 if __name__ == "__main__":
-    pdf_path = "/home/shrey/Desktop/PDF-summarizer/data/pdffs/CV_DSE.pdf"  # Change path if needed
+    pdf_path = "/home/shrey/PDF-summarizer/data/pdffs/CV_DSE.pdf"  # Change path if needed
     raw_text = extract_text_from_pdf(pdf_path)
     cleaned_text = clean_text(raw_text)
 
