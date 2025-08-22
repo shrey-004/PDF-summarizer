@@ -33,7 +33,7 @@ def chunk_text(text, max_tokens=800):
     return chunks
 
 # -------- Step 4: Load a long-document summarization model --------
-model_name = "allenai/led-base-16384"
+model_name = "derekiya/bart_fine_tuned_model-v2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 summarizer = pipeline("summarization", model=model, tokenizer=tokenizer, device=-1)  # device=-1 means CPU
